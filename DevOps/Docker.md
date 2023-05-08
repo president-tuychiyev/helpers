@@ -108,3 +108,25 @@ docker rmi $(docker images -q)
 <b>Note:</b> First you have to stop all the running containers before you remove them. Also before removing an image, you have to stop and remove its dependent container(s).
 
 [View docs](https://stackoverflow.com/questions/17236796/how-to-remove-old-docker-containers)
+
+<hr>
+
+## Dev environment setup with Docker
+
+- Run container
+
+```bash
+docker compose up -d
+```
+
+- Run container
+
+```bash
+docker exec -u $UID:$GID -ti <container_name> /bin/bash
+```
+
+- To access container shell first find container id using <code>docker ps</code> command and then run following command
+
+```bash
+docker exec -u $UID:$GID -ti <container_name> /bin/bash
+```
