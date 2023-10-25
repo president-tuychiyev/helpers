@@ -61,3 +61,10 @@ git config --global credential.helper store
 ```bash
 git pull
 ```
+
+<hr>
+
+## Remove all commit changes
+```bash
+git reset --hard origin/<branch>
+```
